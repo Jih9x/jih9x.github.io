@@ -1,0 +1,1064 @@
+/* General Styles */
+body {
+    background-color: #eafbf4; /* สีเขียวพาสเทล */
+    font-family: 'Noto Sans KR', 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #2a5d67; /* สีเขียวเข้ม */
+}
+/* Section Styles */
+section {
+    background-color: #ffffff; /* สีพื้นหลังของแต่ละ Section */
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 900px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* เพิ่มเงา */
+}
+
+/* Section Styles */
+section {
+    background-color: #ffffff; /* สีพื้นหลังของแต่ละ Section */
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 900px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* เพิ่มเงา */
+}
+
+/* Social Links */
+.social-links {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.social-links .btn-linkedin {
+    background-color: #0077b5; /* LinkedIn */
+}
+
+.social-links .btn-github {
+    background-color: #333; /* GitHub */
+}
+
+.social-links .btn-instagram {
+    background: linear-gradient(45deg, #4caf50, #81c784); /* Instagram */
+}
+
+.social-links .btn-youtube {
+    background-color: #FF0000; /* YouTube */
+}
+
+/* About Section Styling */
+#about {
+    background-color: #ffffff; /* สีพื้นหลังขาว */
+    padding: 3rem 2rem; /* เพิ่มระยะห่างในแต่ละด้าน */
+    margin: 2rem auto; /* เพิ่มระยะห่างด้านบนและล่าง */
+    border-radius: 20px; /* มุมโค้งมน */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05); /* เพิ่มเงา */
+    max-width: 800px; /* จำกัดขนาดความกว้าง */
+    width: 90%; /* ความกว้างหน้าจอ */
+    text-align: center; /* จัดข้อความให้กลาง */
+    overflow: hidden; /* ป้องกันเนื้อหาเกิน */
+    position: relative;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2a5d67; /* สีเขียวเข้ม */
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* เพิ่มเงา */
+    position: relative; /* สำหรับการเพิ่มเส้นตกแต่ง */
+}
+
+.profile-pic img {
+    width: 150px;
+    height: 190px;
+    border-radius: 50%; /* ให้รูปโปรไฟล์เป็นทรงกลม */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* เงารอบรูป */
+    margin-bottom: 1.5rem;
+    border: 4px solid #f4f4f4; /* กรอบสีขาว */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* เพิ่มเอฟเฟกต์ */
+}
+
+.profile-pic img:hover {
+    transform: scale(1.05); /* ขยายเล็กน้อยเมื่อ Hover */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3); /* เงาเพิ่มขึ้นเมื่อ Hover */
+}
+
+.about-text {
+    text-align: justify; /* จัดข้อความแบบเต็มบรรทัด */
+    padding: 0 1rem; /* เพิ่ม Padding ด้านข้าง */
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    color: #555; /* สีข้อความ */
+    line-height: 1.8;
+    margin: 0 auto 1.5rem auto; /* ระยะห่างจากด้านล่าง */
+}
+
+.about-text h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #2a5d67;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.about-text p em {
+    font-style: italic;
+    color: #2a5d67; /* สีเขียวเข้ม */
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+/* Hobbies Section Styling */
+.hobbies-section {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    margin: 2rem auto;
+    max-width: 90%;
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.hobbies-section h3 {
+    color: #004d40;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Hobby Item */
+.hobby {
+    display: flex;
+    flex-direction: column; /* จัดเรียงแนวตั้ง */
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Hobby Icon */
+.hobby-icon {
+    font-size: 2rem;
+    color: #555;
+}
+
+/* Hobby Name */
+.hobby-name {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+    white-space: nowrap; /* บังคับให้อยู่ในบรรทัดเดียว */
+}
+
+/* Hobby Bar */
+.hobby-bar {
+    position: relative;
+    height: 12px;
+    background: #f0f0f0;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px; /* จำกัดความกว้าง */
+    overflow: hidden;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hobby-progress {
+    position: absolute;
+    height: 100%;
+    background: linear-gradient(90deg, #85bbbd, #295849); /* โทนสีน้ำเงินผู้ชาย */
+    border-radius: 10px;
+    transition: width 1.5s ease-in-out; /* เพิ่มเอฟเฟกต์วิ่ง */
+    width: 0; /* เริ่มต้นที่ 0 */
+}
+
+.resume-image {
+    width: 80%; /* ขนาดรูปเป็น 80% ของหน้าจอ */
+    max-width: 700px; /* ขนาดสูงสุด */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* เพิ่มเงา */
+    margin-top: 1rem;
+}
+
+.social-links {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: #388e3c;
+    transform: translateY(-5px); /* เพิ่มเอฟเฟกต์การยกปุ่มขึ้น */
+}
+
+.social-links a i {
+    margin-right: 8px;
+}
+
+.resume {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.resume-image {
+    width: 80%; /* ขนาดรูปเป็น 80% ของหน้าจอ */
+    max-width: 700px; /* ขนาดสูงสุด */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* เพิ่มเงา */
+    margin-top: 1rem;
+}
+
+.social-links {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: #388e3c;
+    transform: translateY(-5px); /* เพิ่มเอฟเฟกต์การยกปุ่มขึ้น */
+}
+
+.social-links a i {
+    margin-right: 8px;
+}
+
+/* Resume Image */
+.resume {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.resume h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #2a5d67;
+}
+
+.resume img {
+    width: 80%; /* ขนาดรูปเป็น 80% ของหน้าจอ */
+    max-width: 700px; /* กำหนดขนาดสูงสุด */
+    height: auto; /* รักษาอัตราส่วน */
+    border-radius: 10px; /* มุมโค้ง */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* เพิ่มเงา */
+    margin-top: 10px;
+}
+
+/* Projects Section */
+#projects {
+    padding: 3rem 2rem;
+    background-color: #f9fafb; /* พื้นหลังสีขาวนวล */
+    border-radius: 20px; /* มุมโค้งมน */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* เพิ่มเงาสำหรับความโดดเด่น */
+    margin: 3rem auto;
+    text-align: center;
+    max-width: 1000px; /* ขนาดสูงสุด */
+}
+
+/* Project Title Styling */
+.section-title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #2a5d67; /* สีเขียวเข้ม */
+    text-transform: capitalize; /* เปลี่ยนตัวอักษรแรกให้เป็นตัวใหญ่ */
+    margin-bottom: 1.5rem;
+    position: relative;
+    font-family: 'Noto Sans', sans-serif; /* เพิ่มความโมเดิร์น */
+}
+
+/* Animation Effect for Title */
+@keyframes slideIn {
+    from {
+        width: 0;
+        opacity: 0;
+    }
+    to {
+        width: 100px;
+        opacity: 1;
+    }
+}
+
+
+/* Project Image Styling */
+.project-image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.project-image {
+    width: 100%;
+    max-width: 500px; /* ขนาดสูงสุด */
+    height: auto; /* คงอัตราส่วนเดิม */
+    border-radius: 15px; /* มุมโค้งมน */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* เพิ่มเงา */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-image:hover {
+    transform: scale(1.05); /* ขยายเล็กน้อยเมื่อ Hover */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); /* เพิ่มเงาเมื่อ Hover */
+}
+
+/* Project Description */
+.project-description {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Button Styling */
+.button-container {
+    margin: 2rem 0;
+}
+
+.prototype-link {
+    display: inline-block;
+    padding: 12px 28px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(90deg, #86bdf8, #639de0);
+    border-radius: 50px;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.prototype-link:hover {
+    background: linear-gradient(90deg, #639de0, #3b77c9);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Diagram Section */
+.diagram {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.diagram-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.diagram-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.diagram p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-top: 1rem;
+}
+
+/* Caption Styling */
+.image-caption {
+    font-size: 1rem;
+    color: #777;
+    margin-top: 0.5rem;
+    font-style: italic;
+    text-align: center;
+}
+
+
+/* Section Title */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2a5d67;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    text-align: center;
+    position: relative;
+    padding-bottom: 10px;
+}
+/* Skills Section */
+#skills {
+    padding: 3rem 2rem;
+    background-color: #f8fbff; /* พื้นหลังสีฟ้าอ่อน */
+    border-radius: 20px; /* มุมโค้งมน */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* เพิ่มเงาสำหรับความโดดเด่น */
+    margin: 3rem auto;
+    text-align: center;
+    max-width: 1000px;
+}
+
+/* Skills Title */
+#skills h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1f4e78;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+    opacity: 0; /* เริ่มจากโปร่งใส */
+    transform: scale(0.8); /* เริ่มจากขนาดเล็ก */
+    transition: all 0.8s ease-out; /* เพิ่มเอฟเฟคการเปลี่ยน */
+}
+
+/* เมื่อหัวข้ออยู่ในมุมมอง */
+#skills h2.animate {
+    opacity: 1; /* แสดงข้อความ */
+    transform: scale(1); /* กลับสู่ขนาดปกติ */
+}
+
+/* เส้นเพิ่มเอฟเฟคเมื่ออยู่ในมุมมอง */
+#skills h2.animate::after {
+    opacity: 1; /* แสดงเส้น */
+    transform: scaleX(1); /* เส้นขยายเต็ม */
+}
+
+/* Skills Grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* Skill Card */
+.skill-card {
+    background: linear-gradient(135deg, #f0f7ff 60%, #eaf3ff); /* สีฟ้าอ่อน */
+    border-left: 5px solid #6ab3ff; /* สีน้ำเงินฟ้า */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เพิ่มเงาสำหรับความโดดเด่น */
+}
+
+/* Hover effect for Skill Cards */
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15); /* เงาเมื่อ Hover */
+}
+
+/* Skill Card Title */
+.skill-card h3 {
+    position: relative;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: #1f4e78; /* สีน้ำเงินเข้ม */
+}
+
+.skill-card h3 i {
+    background: #6ab3ff; /* พื้นหลังไอคอน */
+    color: white; /* สีตัวอักษร */
+    padding: 0.5rem;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
+}
+
+/* Blue underline below Skill Title */
+.skill-card h3::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #6ab3ff; /* เส้นสีน้ำเงิน */
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2px;
+}
+
+/* Skill List */
+.skill-card ul {
+    padding-left: 20px;
+}
+
+.skill-card ul li {
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    color: #4a4a4a; /* สีเทาเข้ม */
+}
+
+.skill-card ul li i {
+    color: #6ab3ff; /* สีไอคอนฟ้า */
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+.skill-card ul li:hover {
+    color: #1f4e78; /* สีฟ้าเข้มเมื่อ Hover */
+}
+
+/* Responsive Layout for Small Screens */
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr; /* Stack skills cards vertically */
+    }
+}
+
+.project-image {
+    max-width: 500px;
+    padding: 10px;
+}
+
+section {
+    margin-bottom: 3rem; /* ระยะห่างระหว่าง Sections */
+}
+
+nav a.active {
+    color: #4caf50;
+    font-weight: bold;
+    border-bottom: 2px solid #4caf50;
+}
+/* Contact Section */
+section#contact {
+    padding: 2rem 3rem;
+    background-color: #f9fcff; /* Light pastel blue background */
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+    text-align: center;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Contact Section Title */
+section#contact h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2a5d67; /* Deep teal */
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+/* Contact Info Styling */
+.contact-info {
+    font-size: 1.2rem;
+    color: #4a4a4a; /* Neutral gray text */
+    margin: 1rem 0;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between icon and text */
+    background-color: #eaf5ff; /* Soft pastel blue background */
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect for Contact Info */
+.contact-info:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    background-color: #d8efff; /* Slightly brighter blue on hover */
+}
+
+/* Icon Styling */
+.contact-info i {
+    font-size: 1.5rem;
+    color: #639de0; /* Soft blue for icons */
+}
+
+/* Reveal Button Styling */
+.reveal-btn {
+    background-color: #639de0; /* Soft blue */
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reveal-btn:hover {
+    background-color: #4a8cd4; /* Slightly darker blue on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Social Links Styling */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 2rem;
+}
+
+/* Social Button Styling */
+.social-links a {
+    background-color: #2a5d67; /* Deep teal */
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a i {
+    margin-right: 8px;
+}
+
+/* Hover Effect for Social Buttons */
+.social-links a:hover {
+    background-color: #4caf50; /* Green hover effect */
+    transform: translateY(-3px);
+}
+
+/* Instagram Button */
+.social-links .btn-instagram {
+    background-color: #88c999; /* Soft green */
+}
+
+.social-links .btn-instagram:hover {
+    background-color: #77b88b; /* Darker green on hover */
+}
+
+/* YouTube Button */
+.social-links .btn-youtube {
+    background-color: #ff6b6b; /* Soft red */
+}
+
+.social-links .btn-youtube:hover {
+    background-color: #e05555; /* Darker red on hover */
+}
+
+/* Contact Image Section */
+.contact-image-container {
+    margin-top: 2rem;
+}
+
+.contact-image {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Text Fade-in Animation */
+.fade-in {
+    opacity: 0; /* เริ่มต้นที่ความทึบ */
+    transform: translateY(20px); /* เลื่อนจากด้านล่าง */
+    transition: opacity 1s ease-out, transform 1s ease-out; /* ทำให้การเคลื่อนไหวเรียบ */
+}
+
+/* เมื่อองค์ประกอบเข้าสู่มุมมอง */
+.fade-in.visible {
+    opacity: 1; /* ทำให้ชัดเจน */
+    transform: translateY(0); /* กลับไปที่ตำแหน่งปกติ */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #2e444b; /* สีพื้นหลังเข้ม */
+    color: #fff; /* สีตัวอักษรขาว */
+    padding: 1.5rem 2rem; /* เพิ่ม padding */
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.1rem; /* เพิ่มขนาดฟอนต์ */
+    border-radius: 0 0 15px 15px; /* โค้งมนที่มุมล่าง */
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* เพิ่มเงาที่ด้านบน */
+    position: relative;
+}
+
+/* เพิ่มเอฟเฟกต์ Gradient */
+footer {
+    background: linear-gradient(135deg, #2e444b, #3a5c66);
+}
+
+/* เพิ่ม Hover Effect */
+footer:hover {
+    transform: scale(1.02); /* ขยายเล็กน้อยเมื่อ Hover */
+    transition: all 0.3s ease-in-out; /* การเปลี่ยนแปลงที่ราบรื่น */
+}
+
+/* Footer Text */
+.footer-text {
+    font-weight: 600; /* ตัวหนา */
+    letter-spacing: 1px; /* เพิ่มช่องว่างระหว่างตัวอักษร */
+    text-transform: uppercase; /* ตัวพิมพ์ใหญ่ */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* เงาเล็กน้อย */
+}
+
+/* สำหรับ Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+footer {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Snowflakes */
+.snowflakes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 130px; /* จำกัดพื้นที่หิมะตกแค่ในส่วนนี้ */
+    pointer-events: none;
+    z-index: 9999;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Snowflake styling */
+.snowflake {
+    position: absolute;
+    top: -10px;
+    font-size: 1rem; /* ขนาดหิมะที่เหมาะสม */
+    color: white; /* สีขาวที่มองเห็นได้ชัด */
+    user-select: none;
+    pointer-events: none;
+    animation: fall 10s linear infinite; /* ทำให้หิมะตกลง */
+    opacity: 0.8; /* ลดความทึบให้หิมะดูโปร่งๆ */
+}
+
+/* Snowflakes fall animation */
+@keyframes fall {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh); /* ทำให้หิมะตกลงเต็มหน้าจอ */
+        opacity: 0;
+    }
+}
+/* Styling for the Explore My Potential Section */
+#home {
+    background-color: #f8fdfb; /* เพิ่มพื้นหลังสีอ่อน */
+    padding: 3rem 2rem; /* เพิ่ม padding */
+    margin: 2rem auto;
+    border-radius: 15px; /* มุมโค้งมน */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* เพิ่มเงา */
+    max-width: 800px; /* จำกัดขนาดความกว้าง */
+    text-align: center; /* จัดข้อความให้อยู่กลาง */
+}
+
+#home h2 {
+    font-size: 2.8rem; /* ขยายขนาดฟอนต์ของหัวข้อ */
+    font-weight: bold; /* ตัวหนา */
+    color: #2a5d67; /* สีเขียวเข้ม */
+    margin-bottom: 1rem; /* ระยะห่างจากข้อความด้านล่าง */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* เพิ่มเงาที่ตัวอักษร */
+}
+
+#home p {
+    font-size: 1.2rem; /* ขยายขนาดฟอนต์ของข้อความคำอธิบาย */
+    color: #555; /* สีเทาอ่อน */
+    line-height: 1.8; /* ระยะห่างระหว่างบรรทัด */
+    max-width: 700px; /* จำกัดขนาดข้อความคำอธิบาย */
+    margin: 0 auto; /* จัดให้อยู่ตรงกลาง */
+    text-align: justify; /* จัดชิดซ้ายและขวา */
+}
+
+/* Add hover effect for the section */
+#home:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* เงาเมื่อ hover */
+    transform: scale(1.02); /* ขยายเล็กน้อย */
+    transition: all 0.3s ease; /* ทำให้การเปลี่ยนแปลงราบรื่น */
+}
+/* Header Styling */
+header {
+    background-color: #2e444b; /* สีพื้นหลังเข้ม */
+    padding: 3rem 0; /* เพิ่ม padding ด้านบนและล่าง */
+    position: relative;
+    text-align: center;
+    width: 100%; /* ใช้ความกว้างเต็มจอ */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* เพิ่มเงา */
+}
+
+/* Title Styling */
+.header-title {
+    font-size: 2.5rem; /* ขนาดฟอนต์สำหรับหน้าจอใหญ่ */
+    font-weight: bold;
+    letter-spacing: 1.5px; /* เพิ่มระยะห่างระหว่างตัวอักษร */
+    color: #ffffff; /* สีตัวอักษรขาว */
+    text-transform: uppercase;
+    margin: 0 auto;
+    max-width: 90%; /* จำกัดความกว้างข้อความ */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* เพิ่มเงาที่ตัวอักษร */
+}
+
+/* Snowflakes Styling */
+.snowflakes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* ความสูงเต็ม header */
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 1;
+    display: flex;
+    justify-content: center; /* จัดให้อยู่กลาง */
+    align-items: flex-start;
+}
+
+.snowflake {
+    position: absolute;
+    font-size: 1.2rem; /* ขนาดหิมะ */
+    color: #ffffff;
+    animation: fall 10s linear infinite; /* ทำให้หิมะตก */
+    opacity: 0.8;
+}
+
+/* Snowflake Animation */
+@keyframes fall {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh); /* ตกลงมาถึงด้านล่าง */
+        opacity: 0;
+    }
+}
+
+/* เพิ่ม Media Queries สำหรับหน้าจอเล็ก */
+@media (max-width: 768px) {
+    header {
+        padding: 2rem 1rem; /* ลด padding ให้เหมาะสมกับหน้าจอเล็ก */
+    }
+
+    .header-title {
+        font-size: 1.8rem; /* ลดขนาดฟอนต์ให้พอดีกับหน้าจอเล็ก */
+        letter-spacing: 1px; /* ลดระยะห่างระหว่างตัวอักษร */
+        max-width: 95%; /* ขยายความกว้างให้เต็มพื้นที่มากขึ้น */
+    }
+
+    .snowflake {
+        font-size: 0.9rem; /* ลดขนาดของหิมะ */
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 1.5rem 1rem; /* ลด padding ลงอีก */
+    }
+
+    .header-title {
+        font-size: 1.5rem; /* ลดขนาดฟอนต์อีกสำหรับหน้าจอเล็กมาก */
+        letter-spacing: 0.8px; /* ปรับระยะห่างตัวอักษร */
+    }
+}
+/* Sticky Bar Styling */
+.sticky-bar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #ffffff; /* สีพื้นหลังขาว */
+    padding: 0.5rem 0.5rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* เพิ่มเงา */
+}
+
+/* Home Button Styling */
+.sticky-bar .home-button {
+    color: #ffffff; /* สีตัวอักษรขาว */
+    background-color: #4caf50; /* สีพื้นหลังเขียว */
+    text-decoration: none;
+    font-size: 1rem; /* ขนาดฟอนต์ */
+    font-weight: bold;
+    padding: 10px 20px; /* ระยะห่างในปุ่ม */
+    border-radius: 25px; /* ปุ่มทรงโค้งมน */
+    transition: all 0.3s ease; /* เอฟเฟกต์การเปลี่ยนแปลง */
+}
+
+/* Hover Effect */
+.sticky-bar .home-button:hover {
+    background-color: #388e3c; /* สีเขียวเข้มขึ้น */
+    transform: scale(1.1); /* ขยายเล็กน้อย */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* เพิ่มเงาเมื่อ Hover */
+}
+/* Sticky Bar Styling */
+.sticky-bar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #ffffff; /* สีพื้นหลังขาว */
+    padding: 1rem 0;
+    display: flex; /* ใช้ Flexbox */
+    justify-content: center; /* จัดให้อยู่กลาง */
+    align-items: center;
+    gap: 1rem; /* ระยะห่างระหว่างปุ่ม */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* เพิ่มเงา */
+    border-bottom: 2px solid #f0f0f0; /* เส้นขอบด้านล่าง */
+}
+
+/* Navigation Links Styling */
+.sticky-bar .nav-link {
+    color: #2a5d67; /* สีตัวอักษรเขียวเข้ม */
+    text-decoration: none; /* ลบขีดเส้นใต้ */
+    font-size: 1rem; /* ขนาดฟอนต์ */
+    font-weight: bold; /* ตัวหนา */
+    padding: 8px 15px; /* ระยะห่างในปุ่ม */
+    border-radius: 30px; /* มุมโค้งมน */
+    background-color: #ffffff; /* สีพื้นหลังขาว */
+    border: 2px solid #2a5d67; /* เส้นขอบเขียวเข้ม */
+    transition: all 0.3s ease; /* เพิ่มเอฟเฟกต์การเปลี่ยนแปลง */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sticky-bar {
+        flex-wrap: wrap; /* ให้ลิงก์เรียงตัวในหลายบรรทัด */
+        gap: 0.8rem; /* ลดช่องว่างระหว่างลิงก์ */
+    }
+
+    .sticky-bar .nav-link {
+        font-size: 0.9rem; /* ลดขนาดฟอนต์ */
+        padding: 6px 12px; /* ลด Padding */
+    }
+}
+
+@media (max-width: 480px) {
+    .sticky-bar {
+        padding: 0.5rem 0; /* ลด Padding สำหรับหน้าจอเล็ก */
+    }
+
+    .sticky-bar .nav-link {
+        font-size: 0.8rem; /* ลดขนาดฟอนต์ลงอีก */
+        padding: 5px 10px; /* ลด Padding */
+    }
+}
+/* รีเซ็ต CSS พื้นฐาน */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* จัดการ Padding และ Border */
+}
+
+/* Body */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* ซ่อนการเลื่อนแนวนอน */
+}
+
+/* Header */
+header {
+    width: 100%; /* ความกว้างเต็มจอ */
+    overflow: hidden; /* ซ่อนส่วนที่เกิน */
+}
+
+/* Sticky Bar */
+.sticky-bar {
+    display: flex;
+    justify-content: center; /* จัดกึ่งกลาง */
+    gap: 1rem;
+    width: 100%; /* ความกว้างเต็มจอ */
+}
+
+/* ลบ Margin หรือ Padding ที่เกินขอบ */
+.container {
+    max-width: 100%; /* จำกัดความกว้าง */
+    overflow: hidden; /* ซ่อนส่วนที่เกิน */
+}
+/* Active Link Styling */
+.nav-link.active {
+    background-color: #2a5d67; /* สีพื้นหลังเขียวเข้ม */
+    color: #ffffff; /* สีตัวอักษรขาว */
+    border-radius: 30px; /* เพิ่มความโค้งมน */
+    padding: 8px 15px; /* ระยะห่างในปุ่ม */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
+}
+/* Hidden Class for Phone Number */
+.hidden {
+    display: none;
+}
+
+/* Reveal Button Styling */
+.reveal-btn {
+    background-color: #6ab3ff;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.reveal-btn:hover {
+    background-color: #4f8cd6;
+}
+
