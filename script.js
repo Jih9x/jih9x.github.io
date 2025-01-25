@@ -199,3 +199,49 @@ document.addEventListener("DOMContentLoaded", () => {
     // Add click event listener to the reveal button
     revealButton.addEventListener("click", revealPhone);
 });
+
+// Language switch functionality
+const languageSwitch = document.querySelector('.language-switch');
+const elementsToTranslate = document.querySelectorAll('[data-en], [data-th]');
+
+let currentLang = 'en'; // Default language
+
+function updateLanguage(newLang) {
+    currentLang = newLang;
+    // Update button text
+    languageSwitch.textContent = newLang === 'en' ? 'TH' : 'EN';
+    languageSwitch.setAttribute('data-lang', newLang);
+    
+    // Update all translatable elements
+    elementsToTranslate.forEach(element => {
+        const text = element.getAttribute(`data-${newLang}`);
+        if (text) {
+            if (element.tagName.toLowerCase() === 'input' || 
+                element.tagName.toLowerCase() === 'textarea') {
+                element.placeholder = text;
+            } else {
+                // Preserve any icons in the element
+                const icons = element.querySelectorAll('i');
+                element.textContent = text;
+                icons.forEach(icon => element.prepend(icon));
+            }
+        }
+    });
+
+    // Store language preference
+    localStorage.setItem('preferredLanguage', newLang);
+}
+
+// Initialize language from localStorage or default to English
+document.addEventListener('DOMContentLoaded', () => {
+    const savedLang = localStorage.getItem('preferredLanguage');
+    if (savedLang) {
+        updateLanguage(savedLang);
+    }
+});
+
+// Language switch event listener
+languageSwitch.addEventListener('click', () => {
+    const newLang = currentLang === 'en' ? 'th' : 'en';
+    updateLanguage(newLang);
+});
