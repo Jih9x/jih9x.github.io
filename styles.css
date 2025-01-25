@@ -913,11 +913,15 @@ footer {
 .career-objective p {
     font-size: 1.2rem;
     color: #555; /* Text color */
-    line-height: 1.8;
-    margin: 0 auto;
+    line-height: 1.5; /* ลดระยะห่างระหว่างบรรทัด */
+    margin: 10px auto; /* ปรับ margin ให้เหมาะสม */
     max-width: 700px; /* Limit width */
     text-align: justify; /* Justify text */
+    letter-spacing: 0.5px; /* ลดระยะห่างตัวอักษร */
+    word-spacing: 0.8px; /* ลดระยะห่างระหว่างคำ */
+    padding: 5px 10px; /* ลด padding ให้ดูสมดุล */
 }
+
 /* Header Styling */
 header {
     background-color: #2e444b; /* สีพื้นหลังเข้ม */
@@ -1021,7 +1025,6 @@ header {
 .sticky-bar .nav-links {
     display: flex;
     justify-content: center;
-    flex-grow: 1;
 }
 
 /* Navigation Links Styling */
@@ -1040,7 +1043,24 @@ header {
 /* Align language switch to the right */
 .sticky-bar .language-switch {
     margin-left: auto;
+    padding: 6px 12px; /* Adjust padding to match other buttons */
+    font-size: 0.9rem; /* Adjust font size */
+    font-weight: bold;
+    color: #2a5d67;
+    background-color: #ffffff;
+    border: 2px solid #2a5d67;
+    border-radius: 30px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
+
+.sticky-bar .language-switch:hover {
+    background-color: #2a5d67;
+    color: #ffffff;
+    transform: scale(1.05); /* Add hover effect */
+}
+
 /* Center navigation links */
 .sticky-bar .nav-links {
     display: flex;
@@ -1138,8 +1158,8 @@ header {
 /* Language Switch Button Styling */
 .language-switch {
     margin-left: auto;
-    padding: 8px 15px;
-    font-size: 1rem;
+    padding: 6px 12px; /* Adjust padding to match other buttons */
+    font-size: 0.9rem; /* Adjust font size */
     font-weight: bold;
     color: #2a5d67;
     background-color: #ffffff;
@@ -1153,5 +1173,6 @@ header {
 .language-switch:hover {
     background-color: #2a5d67;
     color: #ffffff;
+    transform: scale(1.05); /* Add hover effect */
 }
 
