@@ -11,14 +11,17 @@
 </head>
 <body>
     <header>
-        <h1 class="header-title">Seeking Internship in Business & Technology</h1>
+        <h1 class="header-title" data-en="Seeking Internship in Technology" data-th="กำลังมองหาโอกาสฝึกงานในด้านเทคโนโลยี">Seeking Internship in Technology</h1>
     </header>
     
     <div class="sticky-bar">
-        <a href="#about" class="nav-link">Home</a>
-        <a href="#projects" class="nav-link">Projects</a>
-        <a href="#skills" class="nav-link">Skills</a>
-        <a href="#contact" class="nav-link">Contact</a>
+        <div class="nav-links">
+            <a href="#about" class="nav-link" data-en="Home" data-th="หน้าแรก">Home</a>
+            <a href="#projects" class="nav-link" data-en="Projects" data-th="โปรเจกต์">Projects</a>
+            <a href="#skills" class="nav-link" data-en="Skills" data-th="ทักษะ">Skills</a>
+            <a href="#contact" class="nav-link" data-en="Contact" data-th="ติดต่อ">Contact</a>
+        </div>
+        <button class="language-switch" data-lang="en">TH</button>
     </div>
 <!-- Snowflakes -->
 <div class="snowflakes" aria-hidden="true">
@@ -34,24 +37,24 @@
 <!-- Sections with fade-in effect -->
 <!-- About Me Section -->
 <section id="about" class="fade-in">
-    <h2>About Me</h2>
+    <h2 data-en="About Me" data-th="แนะนำตัว">About Me</h2>
     <div class="profile-pic">
         <img src="images/Me.jpeg" alt="Profile Picture">
     </div>
     <div class="about-content">
-        <p>
+        <p data-en="My name is Theerapong Weaha. I am a Computer Science student at Kasetsart University, passionate about Business Analysis and problem-solving. I come from Hat Yai District, Songkhla Province." data-th="สวัสดีครับ ผมธีระพงศ์ เวหะ นักศึกษาวิทยาการคอมพิวเตอร์ ม.เกษตรศาสตร์ ศรีราชา มีความสนใจด้านการวิเคราะห์ธุรกิจและการแก้ปัญหาด้วยเทคโนโลยี ผมมาจากอำเภอหาดใหญ่ จังหวัดสงขลา">
             My name is <strong>Theerapong Weaha</strong>. I am a Computer Science student at Kasetsart University, passionate about Business Analysis and problem-solving. I come from Hat Yai District, Songkhla Province.
         </p>
         <div class="motto-section">
-            <h3>Motto</h3>
-            <p>
+            <h3 data-en="Motto" data-th="คติประจำใจ">Motto</h3>
+            <p data-en="This too shall pass - Whether it's good or bad, everything will eventually pass." data-th="สิ่งนี้ก็จะผ่านไป - ไม่ว่าจะดีหรือร้าย ทุกอย่างจะผ่านไปในที่สุด">
                 <em>"This too shall pass"</em> - Whether it's good or bad, everything will eventually pass.
             </p>
         </div>
     </div>
 
     <section class="hobbies-section">
-        <h3>Hobbies</h3>
+        <h3 data-en="Hobbies" data-th="งานอดิเรก">Hobbies</h3>
         <div class="hobby">
             <span class="hobby-icon"><i class="fas fa-guitar"></i></span>
             <span class="hobby-name">Guitar</span>
@@ -75,10 +78,12 @@
         </div>
     </section>
     
-    <h3>Career Objective</h3>
-    <p>
-        I am seeking an internship or job opportunity in the field of Computer Science, with a particular interest in Business Analysis. I aim to apply my knowledge and abilities to help organizations enhance their processes and achieve their goals.
-    </p>
+    <div class="career-objective">
+        <h3 data-en="Career Objective" data-th="เป้าหมายอาชีพ">Career Objective</h3>
+        <p data-en="I am seeking an internship or job opportunity in the field of Computer Science, with a particular interest in Business Analysis. I aim to apply my knowledge and abilities to help organizations enhance their processes and achieve their goals." data-th="กำลังมองหาโอกาสฝึกงานหรือทำงานในสายวิทยาการคอมพิวเตอร์ โดยเฉพาะด้านการวิเคราะห์ธุรกิจ ผมมุ่งมั่นนำความรู้และทักษะมาช่วยองค์กรพัฒนากระบวนการและบรรลุเป้าหมายได้อย่างมีประสิทธิภาพ">
+            I am seeking an internship or job opportunity in the field of Computer Science, with a particular interest in Business Analysis. I aim to apply my knowledge and abilities to help organizations enhance their processes and achieve their goals.
+        </p>
+    </div>
     <div class="resume">
         <img src="images/resume.jpeg" alt="Resume" class="resume-image">
     </div>
@@ -90,14 +95,14 @@
 
 
 <section id="projects" class="fade-in">
-    <h2 class="section-title">Food Delivery Application</h2>
+    <h2 class="section-title" data-en="Food Delivery Application" data-th="แอปพลิเคชันส่งอาหาร">Food Delivery Application</h2>
 
     <!-- Project Details -->
     <div class="project-container">
         <div class="project-image-container">
             <img src="images/food_delivery_ui.jpeg" alt="Food Delivery App" class="project-image">
         </div>
-        <p class="project-description">
+        <p class="project-description" data-en="UI/UX prototypes designed in Figma, along with system diagrams and user stories to enhance functionality." data-th="ออกแบบต้นแบบ UI/UX ด้วย Figma พร้อมแผนผังระบบและ user stories เพื่อประสิทธิภาพการใช้งาน">
             UI/UX prototypes designed in Figma, along with system diagrams and user stories to enhance functionality.
         </p>
         <div class="button-container">
@@ -111,57 +116,122 @@
     <!-- System Workflow -->
     <div class="workflow-container">
         <img src="images/Sec.jpeg" alt="System Workflow" class="diagram-image">
-        <h3 class="workflow-title">System Workflow</h3>
-        <p class="workflow-description">
+        <h3 class="workflow-title" data-en="System Workflow" data-th="ขั้นตอนการทำงานของระบบ">System Workflow</h3>
+        <p class="workflow-description" data-en="Workflow from menu selection to delivery, illustrating interactions among the customer, app, restaurant, and delivery person." data-th="ขั้นตอนการทำงานตั้งแต่การเลือกเมนูจนถึงการจัดส่ง แสดงการทำงานร่วมกันระหว่างลูกค้า แอปพลิเคชัน ร้านอาหาร และคนส่งอาหาร">
             Workflow from menu selection to delivery, illustrating interactions among the customer, app, restaurant, and delivery person.
         </p>
     </div>
 </section>
 
+<section id="projects" class="fade-in">
+    <h2 class="section-title" data-en="Ez GPAX (GPA Calculator System)" data-th="Ez GPAX (ระบบคำนวณ GPA)">Ez GPAX (GPA Calculator System)</h2>
 
+    <!-- Project Details -->
+    <div class="project-container ez-gpax">
+        <div class="project-image-container">
+            <img src="images/gpa.png" alt="GPA Calculator System" class="project-image">
+        </div>
+        <p class="project-description"data-en="Developed a GPA calculator using HTML, CSS, and JavaScript, allowing users to compute subject-wise GPA and cumulative GPAX with real-time calculations."data-th="พัฒนาเครื่องคำนวณ GPA โดยใช้ HTML, CSS และ JavaScript ช่วยให้ผู้ใช้สามารถคำนวณ GPA รายวิชาและ GPAX รวมได้แบบเรียลไทม์และอิสระ">
+            Developed a GPA calculator using HTML, CSS, and JavaScript, allowing users to compute subject-wise GPA and cumulative GPAX with real-time calculations.
+        </p>
+        <div class="button-container">
+            <a href="https://ezgpa.netlify.app/" class="prototype-link" target="_blank">
+                <i class="fas fa-calculator"></i> View Project
+            </a>
+        </div>
+    </div>
 
+    <!-- Result Image Display -->
+    <div class="result-image-row">
+        <div class="result-image-container">
+            <img src="images/gpa1.png" alt="GPA Calculator Result" class="result-image">
+            <p class="image-caption"data-en="Accurate calculation results with user-adjustable grades"data-th="ผลการคำนวณที่แม่นยำพร้อมให้ผู้ใช้ปรับเกรดได้เองแบบอิสระ"></p> </p>
+        </div>
+        <div class="result-image-container">
+            <img src="images/gpa2.png" alt="GPA Calculator Result" class="result-image">
+            <p class="image-caption"data-en="Alerts for unmet target GPA."data-th="การแจ้งเตือนเมื่อ GPAX ไม่ถึงเป้าหมายจากการปรับ"></p>
+        </div>
+    </div>
+</section>
 
 <section id="skills" class="fade-in">
-    <h2 class="section-title">Skills</h2>
+    <h2 class="section-title" data-en="Skills" data-th="ทักษะ">Skills</h2>
     <div class="skills-grid">
+    <div class="skill-card">
+    <h3 data-en="Soft Skills" data-th="ทักษะ">
+        <i class="fas fa-brain"></i> <span class="skill-title">Soft Skills</span>
+    </h3>
+    <ul class="skill-list">
+        <li data-en="Critical thinking, adaptability, and fast learning" 
+            data-th="การปรับตัวและการเรียนรู้ที่รวดเร็ว">
+            <i class="fas fa-check-circle"></i> <span>Critical thinking, adaptability, and fast learning</span>
+        </li>
+        <li data-en="Effective teamwork and time management" 
+            data-th="ทำงานเป็นทีมและบริหารเวลาอย่างมีประสิทธิภาพ">
+            <i class="fas fa-check-circle"></i> <span>Effective teamwork and time management</span>
+        </li>
+        <li data-en="Attention to detail and problem-solving" 
+            data-th="ใส่ใจในรายละเอียดและมีทักษะในการแก้ปัญหา">
+            <i class="fas fa-check-circle"></i> <span>Attention to detail and problem-solving</span>
+        </li>
+    </ul>
+</div>
+
         <div class="skill-card">
-            <h3><i class="fas fa-brain"></i> Soft Skills</h3>
+            <h3 data-en="Hard Skills" data-th="ทักษะด้านเทคนิค"><i class="fas fa-cogs"></i> Hard Skills</h3>
             <ul>
-                <li><i class="fas fa-check-circle"></i> Critical thinking, adaptability, and fast learning</li>
-                <li><i class="fas fa-check-circle"></i> Effective teamwork and time management</li>
-                <li><i class="fas fa-check-circle"></i> Attention to detail and problem-solving</li>
+                <li data-en="Python, SQL, JavaScript" data-th="Python, SQL, JavaScript">
+                    <i class="fas fa-check-circle"></i> Python, SQL, JavaScript
+                </li>
+                <li data-en="Data visualization (Excel, Power BI)" 
+                    data-th="การแสดงผลข้อมูล (Excel, Power BI)">
+                    <i class="fas fa-check-circle"></i> Data visualization (Excel, Power BI)
+                </li>
+                <li data-en="Figma for wireframes" 
+                    data-th="การออกแบบ Wireframes ด้วย Figma">
+                    <i class="fas fa-check-circle"></i> Figma for wireframes
+                </li>
+                <li data-en="Web Development (HTML, CSS, JavaScript)" 
+                    data-th="การพัฒนาเว็บไซต์ (HTML, CSS, JavaScript)">
+                    <i class="fas fa-check-circle"></i> Web Development (HTML, CSS, JavaScript)
+                </li>
             </ul>
         </div>
         <div class="skill-card">
-            <h3><i class="fas fa-cogs"></i> Hard Skills</h3>
+            <h3 data-en="Languages" data-th="ภาษา"><i class="fas fa-language"></i> Languages</h3>
             <ul>
-                <li><i class="fas fa-check-circle"></i> Python, SQL, JavaScript</li>
-                <li><i class="fas fa-check-circle"></i> Data visualization (Excel, Power BI)</li>
-                <li><i class="fas fa-check-circle"></i> Figma for wireframes</li>
-                <li><i class="fas fa-check-circle"></i> Web Development (HTML, CSS, JavaScript)</li> <!-- Added -->
+                <li data-en="Thai (Native)" data-th="ไทย (เจ้าของภาษา)">
+                    <i class="fas fa-check-circle"></i> Thai (Native)
+                </li>
+                <li data-en="English (Intermediate)" data-th="อังกฤษ (ระดับปานกลาง)">
+                    <i class="fas fa-check-circle"></i> English (Intermediate)
+                </li>
             </ul>
         </div>
         <div class="skill-card">
-            <h3><i class="fas fa-language"></i> Languages</h3>
+            <h3 data-en="Tools & Technologies" data-th="เครื่องมือและเทคโนโลยี">
+                <i class="fas fa-laptop-code"></i> Tools & Technologies
+            </h3>
             <ul>
-                <li><i class="fas fa-check-circle"></i> Thai (Native)</li>
-                <li><i class="fas fa-check-circle"></i> English (Intermediate)</li>
-            </ul>
-        </div>
-        <div class="skill-card">
-            <h3><i class="fas fa-laptop-code"></i> Tools & Technologies</h3>
-            <ul>
-                <li><i class="fas fa-check-circle"></i> Git, GitHub, GitLab</li>
-                <li><i class="fas fa-check-circle"></i> Visual Studio Code</li>
-                <li><i class="fas fa-check-circle"></i> Microsoft Excel, Word, PowerPoint</li> <!-- Added -->
+                <li data-en="Git, GitHub, GitLab" data-th="Git, GitHub, GitLab">
+                    <i class="fas fa-check-circle"></i> Git, GitHub, GitLab
+                </li>
+                <li data-en="Visual Studio Code" data-th="Visual Studio Code">
+                    <i class="fas fa-check-circle"></i> Visual Studio Code
+                </li>
+                <li data-en="Microsoft Excel, Word, PowerPoint" 
+                    data-th="Microsoft Excel, Word, PowerPoint">
+                    <i class="fas fa-check-circle"></i> Microsoft Excel, Word, PowerPoint
+                </li>
             </ul>
         </div>
     </div>
 </section>
 
 
+
 <section id="contact">
-    <h2 class="section-title">Contact</h2>
+    <h2 class="section-title" data-en="Contact" data-th="ติดต่อ">Contact</h2>
     <div class="contact-info">
         <i class="fas fa-envelope"></i>
         <a href="mailto:Theerapong.wea@gmail.com">Theerapong.wea@gmail.com</a>
@@ -169,11 +239,11 @@
     <div class="contact-info">
         <i class="fas fa-phone"></i>
         <span id="phone-display" class="hidden">066-109-9949</span>
-        <button id="reveal-phone" class="reveal-btn">Click to Reveal</button>
+        <button id="reveal-phone" class="reveal-btn"data-en="Click to Reveal"data-th="คลิกเพื่อแสดง"></button>
     </div>
     <div class="contact-info">
         <i class="fas fa-map-marker-alt"></i>
-        <span>Si Racha District, Chonburi 20230 Thailand</span>
+        <span data-en="Si Racha District, Chonburi 20230 Thailand" data-th="อำเภอศรีราชา จังหวัดชลบุรี 20230 ประเทศไทย">Si Racha District, Chonburi 20230 Thailand</span>
     </div>
     <div class="social-links">
         <a href="https://www.instagram.com/jih9_x/" target="_blank" class="btn-instagram">
@@ -194,7 +264,7 @@
 
 
     <footer>
-        <p class="footer-text">Open to Internship Opportunities. Let’s work together to innovate and grow!</p>
+        <p class="footer-text" data-en="Open to Internship Opportunities. Let’s work together to innovate and grow!" data-th="เปิดรับโอกาสฝึกงาน มาร่วมสร้างสรรค์และเติบโตไปด้วยกัน!">Open to Internship Opportunities. Let’s work together to innovate and grow!</p>
     </footer>
 
     <script src="script.js"></script>
