@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap');
+
 /* General Styles */
 body {
     background-color: #eafbf4; /* สีเขียวพาสเทล */
-    font-family: 'Noto Sans KR', 'Roboto', Arial, sans-serif;
+    font-family: 'Noto Sans KR', 'Roboto', 'Sarabun', Arial, sans-serif;
     margin: 0;
     padding: 0;
     color: #2a5d67; /* สีเขียวเข้ม */
@@ -72,6 +74,7 @@ section {
     text-align: center; /* จัดข้อความให้กลาง */
     overflow: hidden; /* ป้องกันเนื้อหาเกิน */
     position: relative;
+    font-family: 'Sarabun', sans-serif; /* Apply Thai font */
 }
 
 #about h2 {
@@ -138,7 +141,7 @@ section {
     margin: 2rem auto;
     max-width: 90%;
     text-align: center;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Sarabun', sans-serif; /* Apply Thai font */
 }
 
 .hobbies-section h3 {
@@ -365,6 +368,7 @@ section {
     margin: 2rem 0;
 }
 
+/* Project Button Styling */
 .prototype-link {
     display: inline-block;
     padding: 12px 28px;
@@ -383,6 +387,25 @@ section {
     background: linear-gradient(90deg, #639de0, #3b77c9);
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Specific styling for Ez GPAX project */
+#projects .ez-gpax .project-description {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#projects .ez-gpax .button-container .prototype-link {
+    background: linear-gradient(90deg, #ff6b6b, #e05555);
+}
+
+#projects .ez-gpax .button-container .prototype-link:hover {
+    background: linear-gradient(90deg, #e05555, #c44b4b);
 }
 
 /* Diagram Section */
@@ -420,6 +443,35 @@ section {
     text-align: center;
 }
 
+/* Result Image Row */
+.result-image-row {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap; /* Wrap images on smaller screens */
+}
+
+.result-image-container {
+    flex: 1;
+    max-width: 45%; /* Adjust the width of each image container */
+    text-align: center;
+}
+
+.result-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 1rem;
+}
+
+.image-caption {
+    font-size: 1rem;
+    color: #777;
+    margin-top: 0.5rem;
+    font-style: italic;
+    text-align: center;
+}
 
 /* Section Title */
 .section-title {
@@ -441,6 +493,7 @@ section {
     margin: 3rem auto;
     text-align: center;
     max-width: 1000px;
+    font-family: 'Sarabun', sans-serif; /* Apply Thai font */
 }
 
 /* Skills Title */
@@ -579,6 +632,7 @@ section#contact {
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
+    font-family: 'Sarabun', sans-serif; /* Apply Thai font */
 }
 
 /* Contact Section Title */
@@ -835,6 +889,35 @@ footer {
     transform: scale(1.02); /* ขยายเล็กน้อย */
     transition: all 0.3s ease; /* ทำให้การเปลี่ยนแปลงราบรื่น */
 }
+/* Career Objective Styling */
+.career-objective {
+    background-color: #f8fdfb; /* Light pastel background */
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow */
+    margin: 2rem auto;
+    max-width: 800px; /* Limit width */
+    text-align: center; /* Center text */
+    font-family: 'Sarabun', sans-serif; /* Apply Thai font */
+}
+
+.career-objective h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2a5d67; /* Dark green color */
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+.career-objective p {
+    font-size: 1.2rem;
+    color: #555; /* Text color */
+    line-height: 1.8;
+    margin: 0 auto;
+    max-width: 700px; /* Limit width */
+    text-align: justify; /* Justify text */
+}
 /* Header Styling */
 header {
     background-color: #2e444b; /* สีพื้นหลังเข้ม */
@@ -925,42 +1008,20 @@ header {
     top: 0;
     z-index: 100;
     background-color: #ffffff; /* สีพื้นหลังขาว */
-    padding: 0.5rem 0.5rem;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* เพิ่มเงา */
-}
-
-/* Home Button Styling */
-.sticky-bar .home-button {
-    color: #ffffff; /* สีตัวอักษรขาว */
-    background-color: #4caf50; /* สีพื้นหลังเขียว */
-    text-decoration: none;
-    font-size: 1rem; /* ขนาดฟอนต์ */
-    font-weight: bold;
-    padding: 10px 20px; /* ระยะห่างในปุ่ม */
-    border-radius: 25px; /* ปุ่มทรงโค้งมน */
-    transition: all 0.3s ease; /* เอฟเฟกต์การเปลี่ยนแปลง */
-}
-
-/* Hover Effect */
-.sticky-bar .home-button:hover {
-    background-color: #388e3c; /* สีเขียวเข้มขึ้น */
-    transform: scale(1.1); /* ขยายเล็กน้อย */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* เพิ่มเงาเมื่อ Hover */
-}
-/* Sticky Bar Styling */
-.sticky-bar {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background-color: #ffffff; /* สีพื้นหลังขาว */
     padding: 1rem 0;
     display: flex; /* ใช้ Flexbox */
-    justify-content: center; /* จัดให้อยู่กลาง */
+    justify-content: space-between; /* จัดให้อยู่กลาง */
     align-items: center;
-    gap: 1rem; /* ระยะห่างระหว่างปุ่ม */
+    gap: 10em; /* ระยะห่างระหว่างปุ่ม */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* เพิ่มเงา */
     border-bottom: 2px solid #f0f0f0; /* เส้นขอบด้านล่าง */
+}
+
+/* Center navigation links */
+.sticky-bar .nav-links {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
 }
 
 /* Navigation Links Styling */
@@ -974,6 +1035,18 @@ header {
     background-color: #ffffff; /* สีพื้นหลังขาว */
     border: 2px solid #2a5d67; /* เส้นขอบเขียวเข้ม */
     transition: all 0.3s ease; /* เพิ่มเอฟเฟกต์การเปลี่ยนแปลง */
+}
+
+/* Align language switch to the right */
+.sticky-bar .language-switch {
+    margin-left: auto;
+}
+/* Center navigation links */
+.sticky-bar .nav-links {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    gap: 0.8em; /* ปรับระยะห่างระหว่างปุ่ม */
 }
 
 /* Responsive Design */
@@ -1060,5 +1133,25 @@ header {
 
 .reveal-btn:hover {
     background-color: #4f8cd6;
+}
+
+/* Language Switch Button Styling */
+.language-switch {
+    margin-left: auto;
+    padding: 8px 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #2a5d67;
+    background-color: #ffffff;
+    border: 2px solid #2a5d67;
+    border-radius: 30px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.language-switch:hover {
+    background-color: #2a5d67;
+    color: #ffffff;
 }
 
