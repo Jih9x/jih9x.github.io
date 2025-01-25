@@ -222,8 +222,12 @@ function updateLanguage(newLang) {
             } else {
                 // Preserve any icons in the element
                 const icons = element.querySelectorAll('i');
-                element.textContent = text;
-                icons.forEach(icon => element.prepend(icon));
+                element.style.opacity = 0; // Start transition
+                setTimeout(() => {
+                    element.textContent = text;
+                    icons.forEach(icon => element.prepend(icon));
+                    element.style.opacity = 1; // End transition
+                }, 300); // Duration of the transition
             }
         }
     });
