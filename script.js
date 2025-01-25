@@ -222,12 +222,13 @@ function updateLanguage(newLang) {
             } else {
                 // Preserve any icons in the element
                 const icons = element.querySelectorAll('i');
+                element.style.transition = 'opacity 0.5s ease-in-out'; // Smooth transition
                 element.style.opacity = 0; // Start transition
                 setTimeout(() => {
                     element.textContent = text;
                     icons.forEach(icon => element.prepend(icon));
                     element.style.opacity = 1; // End transition
-                }, 300); // Duration of the transition
+                }, 500); // Duration of the transition
             }
         }
     });
@@ -248,4 +249,80 @@ document.addEventListener('DOMContentLoaded', () => {
 languageSwitch.addEventListener('click', () => {
     const newLang = currentLang === 'en' ? 'th' : 'en';
     updateLanguage(newLang);
+});
+
+// Function to enlarge images when clicked
+document.querySelectorAll('img').forEach(image => {
+    image.addEventListener('click', () => {
+        const modal = document.createElement('div');
+        modal.classList.add('image-modal');
+        modal.innerHTML = `
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <img src="${image.src}" alt="${image.alt}" class="modal-image">
+            </div>
+        `;
+        document.body.appendChild(modal);
+
+        // Close modal when clicking the close button or outside the image
+        modal.addEventListener('click', (e) => {
+            if (e.target.classList.contains('close-button') || e.target === modal) {
+                modal.remove();
+            }
+        });
+    });
+});
+document.addEventListener("DOMContentLoaded", function () {
+    let lang = "en"; // เปลี่ยนเป็น "th" ถ้าต้องการแสดงภาษาไทยเริ่มต้น
+    let aboutText = document.getElementById("about-text");
+
+    if (aboutText) {
+        aboutText.innerHTML = aboutText.getAttribute(`data-${lang}`);
+    }
+});
+document.addEventListener("DOMContentLoaded", function () {
+    const aboutText = document.getElementById("about-text");
+    const languageSwitch = document.querySelector('.language-switch');
+
+    // ค่าภาษาเริ่มต้น (ดึงจาก LocalStorage)
+    let currentLang = localStorage.getItem('preferredLanguage') || 'en';
+
+    // ฟังก์ชันเปลี่ยนภาษา พร้อมเอฟเฟกต์
+    function updateText() {
+        const textEn = `My name is <strong><span class='highlight-name'>Theerapong Weaha</span></strong>. I am a Computer Science student at Kasetsart University, passionate about Business Analysis and problem-solving. I come from Hat Yai District, Songkhla Province.`;
+
+        const textTh = `สวัสดีครับ ผม <strong><span class='highlight-name'>ธีระพงศ์ เวหะ</span></strong> นักศึกษาวิทยาการคอมพิวเตอร์ ม.เกษตรศาสตร์ ศรีราชา มีความสนใจด้านการวิเคราะห์ธุรกิจและการแก้ปัญหาด้วยเทคโนโลยี ผมมาจากอำเภอหาดใหญ่ จังหวัดสงขลา`;
+
+        if (aboutText) {
+            // ทำให้ข้อความค่อยๆ จางหายไปก่อนเปลี่ยนภาษา
+            aboutText.style.opacity = 0;
+
+            setTimeout(() => {
+                aboutText.innerHTML = currentLang === "th" ? textTh : textEn;
+                aboutText.style.opacity = 1; // ค่อยๆ แสดงกลับมา
+            }, 500); // หน่วงเวลา 300ms ก่อนเปลี่ยนเนื้อหา
+        }
+
+        // อัปเดตภาษาใน `<html lang="">`
+        document.documentElement.setAttribute("lang", currentLang);
+
+        // อัปเดตปุ่มเปลี่ยนภาษา
+        if (languageSwitch) {
+            languageSwitch.textContent = currentLang === 'en' ? 'TH' : 'EN';
+        }
+
+        // เก็บค่าภาษาไว้ใน LocalStorage
+        localStorage.setItem('preferredLanguage', currentLang);
+    }
+
+    // โหลดค่าภาษาครั้งแรก
+    updateText();
+
+    // ฟังก์ชันเปลี่ยนภาษาเมื่อกดปุ่ม
+    if (languageSwitch) {
+        languageSwitch.addEventListener('click', () => {
+            currentLang = currentLang === "en" ? "th" : "en";
+            updateText();
+        });
+    }
 });
