@@ -1031,9 +1031,9 @@ header {
 /* Align language switch to the right */
 .sticky-bar .language-switch {
     margin-left: auto;
-    margin-right: 30px; /* ปรับระยะห่างตามต้องการ */
+    margin-right: 10px; /* ปรับระยะห่างตามต้องการ */
     padding: 6px 12px; /* Adjust padding to match other buttons */
-    font-size: 1rem; /* Adjust font size */
+    font-size: 0.8rem; /* Adjust font size */
     font-weight: bold;
     color: #2a5d67;
     background-color: #ffffff;
@@ -1055,7 +1055,7 @@ header {
     display: flex;
     justify-content: center;
     flex-grow: 1;
-    gap: 0.8em; /* ปรับระยะห่างระหว่างปุ่ม */
+    gap: 0.5em; /* ปรับระยะห่างระหว่างปุ่ม */
 }
 
 /* Responsive Design */
